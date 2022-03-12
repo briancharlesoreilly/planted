@@ -1,0 +1,42 @@
+// Fonts used are Josefin Sans and Roboto, linked diretly in the <head> of the html for each page. Link is shown below
+
+/*  
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
+
+*/ 
+
+// site fonts
+// font-family: 'Josefin Sans', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+
+html {
+  // resizing base font size so 10px = 1rem
+  font-size: 62.5%;
+}
+body {
+  // setting default body font size to 16px
+  font-size: 1.6rem;
+  background-color: $primary;
+}
+h1 {
+  font-size: 16.6rem;
+  font-family: $heading-font;
+  font-weight: 400;
+  color: $secondary;
+}
+.header-text {
+  color: $primary-accent;
+  display: block;
+}
+// style h2, h3, h4,
+p {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  font-family: $body-font;
+  font-weight: 400;
+  color: $primary-text;
+}
