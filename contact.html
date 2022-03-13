@@ -5,48 +5,75 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Planted  |  Contact</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b1b1a9bb2c.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
+  <div class="wrapper">
+    <nav class="nav-bar"> <!-- .nav-bar STARTS -->
+        <ul class="flex-nav-container">
+          <li><p class="logo">Planted</p></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    </nav> <!-- .nav-bar ENDS -->
+  </div>
 
-  
-  
-  <header></header>
+  <header> <!-- header STARTS -->
+    <div class="wrapper"> <!-- header .wrapper STARTS -->
+      <h1>Get in Touch</h1>
+    </div> <!-- header .wrapper ENDS -->
+  </header> <!-- header ENDS -->
 
+  <main> <!-- main STARTS -->
 
+    <section class="contact-flex"> <!-- .contact-flex STARTS -->
+      <div class="social-icons">
+        <ul>
+          <li><i class="fa-brands fa-facebook-f"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-whatsapp"></i></li>
+        </ul>
+      </div>
+      <div class="contact-info">
+        <p>123-456-7890</p>
+        <p>123 Queen Street West, Unit 10</p>
+        <p>Toronto, Ontario</p>
+        <p>M5V 2D5</p>
+      </div>
 
+      <div class="contact">
+        <div class="comment-form-container"> <!-- comment container BEGINS -->
+          <form action="#" method="post" class="comment-form">
+            <label for="name" class="sr-only"></label>
+            <input type="text" id="name" placeholder="Name">
+        
+            <label for="email" class="sr-only"></label>
+            <input type="text" id="email" placeholder="Email address">
+        
+            <label for="message" class="sr-only">Message for me</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+        
+            <button>Submit</button>
+          </form>
+        </div> <!-- comment container ENDS -->
+        <div class="img-accent-left"></div> <!-- img accent border -->
+      </div>
 
-  <main>
+    </section> <!-- .contact-flex ENDS -->
 
+  </main> <!-- main ENDS -->
 
-
-    <div class="comment-form-container"> <!-- comment container BEGINS -->
-
-
-      <form action="#" method="post" class="comment-form">
-        <label for="name" class="sr-only"></label>
-        <input type="text" id="name" placeholder="Name">
-    
-        <label for="email" class="sr-only"></label>
-        <input type="text" id="email" placeholder="Email address">
-    
-        <label for="message" class="sr-only">Message for me</label>
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-    
-        <button>Submit</button>
-      </form>
-    </div> <!-- comment container ENDS -->
-
-  </main>
-
-
-
-
-
-  <footer>
-
-
-  </footer>
+    <footer> <!-- footer STARTS -->
+      <p>Copyright © 2022 Juno College</p>
+    </footer> <!-- footer ENDS -->
 
 </body>
 </html>
