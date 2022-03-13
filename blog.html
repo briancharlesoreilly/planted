@@ -13,19 +13,19 @@
 </head>
 <body>
 
-  <div class="wrapper">
+  <header class="blog-header"> <!-- header STARTS -->
     <nav class="nav-bar"> <!-- .nav-bar STARTS -->
-        <ul class="flex-nav-container">
-          <li><p class="logo">Planted</p></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+      <div class="wrapper"> <!-- .nav-bar .wrapper STARTS -->
+          <ul class="flex-nav-container">
+            <li><p class="logo">Planted</p></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./blog.html" class="current-page">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+      </div> <!-- .nav-bar .wrapper STARTS -->
     </nav> <!-- .nav-bar ENDS -->
-  </div>
-  
-  <header> <!-- header STARTS -->
+
     <div class="wrapper">
       <!-- header just includes h2 "blog" and background image (full bleed) -->
       <h2 class="blog-h2">Blog</h2>
@@ -33,7 +33,7 @@
   </header> <!-- header ENDS -->
   
   <main> <!-- main STARTS -->
-    <div class="wrapper">
+    <div class="wrapper"> <!-- main .wrapper STARTS -->
       <section class="blog-main-flex"> <!-- .blog-main-flex section STARTS -->
         <div class="blog-left-flex"> <!-- blog left side bar START -->
           <div class="blog-left-img">
@@ -89,7 +89,6 @@
 
           <div class="comment-container"> <!-- comment container BEGINS -->
 
-
             <form action="#" method="post" class="comment-form">
               <label for="name" class="sr-only"></label>
               <input type="text" id="name" placeholder="Name">
@@ -106,10 +105,8 @@
         </div> <!-- blog-right side bar ENDS -->
       </section> <!-- .blog-main-flex section ENDS -->
     </div> <!-- main .wrapper ENDS -->
-
   </main> <!-- main ENDS -->
   
-
   <footer> <!-- footer STARTS -->
     <p>Copyright © 2022 Juno College</p>
   </footer> <!-- footer ENDS -->

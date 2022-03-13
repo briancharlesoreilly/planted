@@ -1,4 +1,11 @@
 // wrapper
+.wrapper {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+img {max-width: 100%; height: auto; display: block;}
 
 // offset img borders (weird accent colors behind divs)
 

@@ -12,45 +12,40 @@
   <script src="https://kit.fontawesome.com/b1b1a9bb2c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- .nav-bar STARTS -->
-  <nav class="nav-bar">
-    <div class="wrapper">
-      <ul class="flex-nav-container">
-        <li><p class="logo">Planted</p></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div> 
-  <!-- .wrapper ENDS -->
-  </nav>
-  <!-- .nav-bar ENDS -->
-  <!-- header STARTS -->
-  <header>
+
+  <header class="home-header"> <!-- header STARTS -->
+    <nav class="nav-bar"> <!-- .nav-bar STARTS -->
+      <div class="wrapper"> <!-- .nav-bar .wrapper STARTS -->
+        <ul class="flex-nav-container">
+          <li><p class="logo">Planted</p></li>
+          <li><a href="./index.html" class="current-page">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div> <!-- .nav-bar .wrapper ENDS -->
+    </nav> <!-- .nav-bar ENDS -->
+
     <h1>Planted <span class="header-text">invitation</span></h1>
     <div class="header-img">
       <img src="./assets/header-box.jpg" alt="a top down photo of a broad leafed plant">
     </div>
-  </header>
-  <!-- header ENDS -->
-  <!-- main STARTS -->
-  <main>
-  <!-- .about section STARTS -->
-    <section class="about">
+  </header> <!-- header ENDS -->
+  
+  <main> <!-- main STARTS -->
+    <section class="about" id="about"> <!-- .about section STARTS -->
       <div class="wrapper">
         <h2>What is Planted?</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur asperiores, recusandae ducimus itaque labore laborum enim. Est rem quisquam ea incidunt quidem minima aliquam? A incidunt deserunt mollitia expedita, quae ducimus modi repudiandae dignissimos magni sit quas facere quam, neque facilis maiores rerum dolorem eos vero veritatis voluptatem minima. Commodi, quae quia.</p>
         <a href="#" class="button-link">Find Out More</a>
-      </div>
-    </section> <!-- .about .wrapper ends -->
-  <!-- .about section ENDS -->
-  <!-- .workshops section STARTS -->
-    <section class="workshops">
+      </div> <!-- .about .wrapper ends -->
+    </section> <!-- .about section ENDS -->
+  
+    <section class="workshops"> <!-- .workshops section STARTS -->
       <div class="wrapper"> <!-- flex .workshops .wrapper STARTS -->
         <div class="img-container-top">
           <img src="./assets/left-flowers.jpg" alt="a bouquet of assorted flowers">
-          <div class="img-accent-right"></div>
+          <div class="img-accent-right"></div> <!-- offset img accent border -->
         </div>
         <div class="workshops-info-box">
           <h4>Upcoming workshops</h4>
@@ -64,13 +59,12 @@
         </div>
         <div class="img-container-bottom">
           <img src="./assets/right-flowers.jpg" alt="a vibrant green bush with small flat petals">
-          <div class="img-accent-left"></div>
+          <div class="img-accent-left"></div> <!-- offset img accent border -->
         </div>
       </div> <!-- flex .workshops .wrapper ENDS -->
-    </section>
-  <!-- .workshops section ENDS -->
-  <!-- .middle-links section STARTS -->
-    <section class="middle-links">
+    </section> <!-- .workshops section ENDS -->
+  
+    <section class="middle-links"> <!-- .middle-links section STARTS -->
       <div class="wrapper"> <!-- .middle-links .wrapper STARTS -->
         <div class="middle-links-flex">
           <div class="green-houses">
@@ -103,29 +97,26 @@
           </div>
         </div>
       </div> <!-- .middle-links .wrapper ENDS -->
-    </section>
-  <!-- .middle-links section ENDS -->
- 
+    </section> <!-- .middle-links section ENDS -->
+  
     <div class="middle-bg-img"></div>  <!-- middle-bg-image FULL BLEED IMG  -->
-
-  <!-- .founder section STARTS -->
-    <section class="founder">
-      <div class="wrapper">
+  
+    <section class="founder"> <!-- .founder section STARTS -->
+      <div class="wrapper"> <!-- .founder .wrapper STARTS -->
         <div class="founder-flex">
           <div class="founder-img-container">
             <img src="./assets/founder.jpg" alt="the founder of planted in a garden framed on either side by tall bushes with red flowers blooming">
-            <div class="img-accent-right"></div>
+            <div class="img-accent-right"></div> <!-- offset img border -->
             <h3>Planted's founder</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas maiores ullam tempora corrupti, earum saepe nostrum neque assumenda id similique distinctio error laborum sunt molestiae, iste et, nisi atque exercitationem aliquam in! Numquam commodi doloribus harum! Alias in, soluta ex doloribus quis officia totam laudantium aliquam deleniti hic sapiente earum molestias iste repudiandae voluptas.</p>
             <a href="#" class="button-link">Find Out More</a>
           </div>
         </div>
       </div> <!-- .founder .wrapper ENDS -->
-    </section>
-  <!-- .founder section ENDS -->
-  <!-- .photo-gallery section STARTS -->
-    <section class="photo-gallery">
-      <div class="wrapper">
+    </section> <!-- .founder section ENDS -->
+  
+    <section class="photo-gallery"> <!-- .photo-gallery section STARTS -->
+      <div class="wrapper"> <!-- .photo-gallery .wrapper STARTS -->
         <div class="photo-gallery-flex">
           <div>
             <img src="./assets/gallery-image-1.jpg" alt="a greenhouse filled with a variety of large plants">
@@ -137,14 +128,13 @@
             <img src="./assets/gallery-image-3.jpg" alt="many small and medium sized cacti">
           </div>
         </div> <!-- .photo-gallery-flex ENDS -->
-      </div> <!-- .wrapper ENDS -->
+      </div> <!-- .photo-gallery .wrapper ENDS -->
     </section> <!-- .photo-gallery section ENDS -->
-  </main>
-  <!-- main ENDS -->
-  <!-- footer STARTS -->
-  <footer>
+  </main> <!-- main ENDS -->
+  
+  <footer> <!-- footer STARTS -->
     <p>Copyright © 2022 Juno College</p>
-  </footer>
-  <!-- footer ENDS -->
+  </footer> <!-- footer ENDS -->
+  
 </body>
 </html>

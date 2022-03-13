@@ -2,3 +2,51 @@
 
 // NOTE: the background of the nav bar is TRANSPARENT on the index.html/homepage
 
+.nav-bar {
+  background-color: transparent;
+}
+.blog-header .nav-bar,
+.contact-header .nav-bar {
+  background-color: $navbar-bg;
+}
+
+.flex-nav-container {
+  width: 50%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  li {
+    padding: 10px 0;
+  }
+
+  a {
+    color: $secondary;
+    font-family: $heading-font;
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    }
+    a:hover {
+      color: $primary-accent;
+    }
+
+  .current-page {
+    color: $primary-accent;
+  }
+
+  .logo {
+    color: $secondary;
+    font-family: $heading-font;
+    font-weight: 400;
+    font-size: 3.2rem;
+    padding: 0;
+    margin: 0;
+  }
+
+}
+

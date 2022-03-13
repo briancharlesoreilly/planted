@@ -262,6 +262,75 @@ p {
   color: #2c2c2c;
 }
 
+.wrapper {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.nav-bar {
+  background-color: transparent;
+}
+
+.blog-header .nav-bar,
+.contact-header .nav-bar {
+  background-color: #050a0c;
+}
+
+.flex-nav-container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.flex-nav-container li {
+  padding: 10px 0;
+}
+.flex-nav-container a {
+  color: #ffffff;
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.flex-nav-container a:hover {
+  color: #f8e71c;
+}
+.flex-nav-container .current-page {
+  color: #f8e71c;
+}
+.flex-nav-container .logo {
+  color: #ffffff;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 3.2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.home-header {
+  background-image: url(../assets/home-image-1.jpg);
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
 textarea {
   resize: none;
 }
