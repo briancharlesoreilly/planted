@@ -274,6 +274,10 @@ img {
   display: block;
 }
 
+.button-link {
+  font: 1rem;
+}
+
 .nav-bar {
   background-color: transparent;
 }
@@ -292,14 +296,17 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin: 0;
-  padding: 0;
+  padding: 25px 0 10px 0;
 }
 .flex-nav-container li {
-  padding: 10px 0;
+  padding: 10px 10px;
+}
+.flex-nav-container .logo-li {
+  padding: 10px 0px;
 }
 .flex-nav-container a {
   color: #ffffff;
@@ -319,7 +326,7 @@ img {
   color: #ffffff;
   font-family: "Josefin Sans";
   font-weight: 400;
-  font-size: 3.2rem;
+  font-size: 4rem;
   padding: 0;
   margin: 0;
 }
@@ -329,6 +336,24 @@ img {
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.home-header .header-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.home-header .header-img {
+  position: absolute;
+  right: 0;
 }
 
 textarea {
