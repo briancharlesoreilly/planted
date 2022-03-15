@@ -5,9 +5,10 @@
 .home-header {
   background-image: url(../assets/home-image-1.jpg);
   width: 100%;
-  height: auto;
+  height: 100vh;
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: relative;
 
   .header-text {
@@ -15,10 +16,28 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    z-index: 10;
+    position: absolute;
+
+    .header-invitation {
+      display: block;
+      color: $primary-accent;
+    }
   }
 
   .header-img {
+    max-width: 1024px;
+    width: 45%;
     position: absolute;
     right: 0;
+    // use ** bottom: -8%; ** to have overlapping image stick to BOTTOM of browser as this window is resized. use ** top: 20% ** to have overlapping image stick to TOP of browser as this window is resized. ***** DESIGNER / CLIENT CHOICE *****
+    bottom: -8%;
+    z-index: 0;
+    display: flex;
+    flex-basis: content;
+
+    img {
+      width: 100%;
+    }
   }
 }

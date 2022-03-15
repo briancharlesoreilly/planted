@@ -226,13 +226,6 @@ html {
   overflow: hidden;
 }
 
-/*  
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
-
-*/
 html {
   font-size: 62.5%;
 }
@@ -334,9 +327,10 @@ img {
 .home-header {
   background-image: url(../assets/home-image-1.jpg);
   width: 100%;
-  height: auto;
+  height: 100vh;
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: relative;
 }
 .home-header .header-text {
@@ -350,10 +344,28 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 10;
+  position: absolute;
+}
+.home-header .header-text .header-invitation {
+  display: block;
+  color: #f8e71c;
 }
 .home-header .header-img {
+  max-width: 1024px;
+  width: 45%;
   position: absolute;
   right: 0;
+  bottom: -8%;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: content;
+      flex-basis: content;
+}
+.home-header .header-img img {
+  width: 100%;
 }
 
 textarea {
