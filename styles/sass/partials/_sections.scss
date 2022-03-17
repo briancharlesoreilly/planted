@@ -4,4 +4,19 @@
 
 // ABOUT SECTION //
 //***************//
+.about {
+  background-color: $primary;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0;
+    text-align: center;
+  }
+}
+
+// WORKSHOPS SECTION //
+//*******************//
 

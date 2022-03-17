@@ -5,12 +5,30 @@
   margin: 0 auto;
 }
 
-img {max-width: 100%; height: auto; display: block;}
+body { margin: 0; padding: 0;}
 
-// offset img borders (weird accent colors behind divs)
+img {max-width: 100%; height: auto; display: block;}
 
 // buttons (i.e "find out more" and "read more"
 .button-link {
-  font: 1rem;
-  // put button styling in here
+  font-family: $heading-font;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  color: $primary;
+  background-color: $secondary-accent;
+  padding: 12px 35px 8px 35px;
+  text-align: center;
+  transition: 0.1s;
 }
+.button-link:hover,
+.button-link:focus {
+  background-color: $primary;
+  color: $secondary-accent;
+  outline: 1px solid $secondary-accent;
+  transition: 0.1s;
+}
+
+// offset img borders (weird accent colors behind divs)
