@@ -232,7 +232,6 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-color: #f0efed;
 }
 
 h1 {
@@ -252,6 +251,15 @@ h2 {
   font-size: 5.63rem;
   font-weight: 700;
   letter-spacing: 0.13rem;
+  color: #2c2c2c;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Josefin Sans";
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
   color: #2c2c2c;
 }
 
@@ -422,8 +430,57 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 150px 0;
+  padding: 200px 0;
   text-align: center;
+}
+
+.workshops {
+  background-color: #ffffff;
+}
+.workshops .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  margin-top: 400px;
+  margin-bottom: 400px;
+}
+.workshops .wrapper .img-container-top,
+.workshops .wrapper .workshops-info-box,
+.workshops .wrapper .plants-info-box,
+.workshops .wrapper .img-container-bottom {
+  width: 50%;
+  position: absolute;
+}
+.workshops .wrapper .img-container-top {
+  left: -100px;
+  bottom: 60px;
+  -webkit-box-shadow: 40px 40px 0px -21px #f8e71c;
+          box-shadow: 40px 40px 0px -21px #f8e71c;
+}
+.workshops .wrapper .workshops-info-box {
+  right: 0;
+  bottom: 0;
+  padding: 50px 0 50px 100px;
+  text-align: left;
+}
+.workshops .wrapper .plants-info-box {
+  padding: 50px 100px 50px 0;
+  text-align: right;
+  left: 0;
+  top: 0;
+}
+.workshops .wrapper .img-container-bottom {
+  right: -100px;
+  top: 60px;
+  -webkit-box-shadow: -40px 40px 0px -21px #f8e71c;
+          box-shadow: -40px 40px 0px -21px #f8e71c;
+}
+
+.middle-links {
+  background-color: #f0efed;
 }
 
 textarea {

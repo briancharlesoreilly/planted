@@ -12,11 +12,64 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 150px 0;
+    padding: 200px 0;
     text-align: center;
   }
 }
 
 // WORKSHOPS SECTION //
 //*******************//
+.workshops {
+  background-color: $secondary;
 
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 400px;
+    margin-bottom: 400px;
+    // width: 100%;
+    // max-width: 1400px;
+
+    .img-container-top,
+    .workshops-info-box,
+    .plants-info-box,
+    .img-container-bottom {
+      width: 50%;
+      position: absolute;
+    }
+
+    .img-container-top {
+      left:-100px;
+      bottom: 60px;
+      box-shadow: 40px 40px 0px -21px $primary-accent;
+    }
+
+    .workshops-info-box {
+      right: 0;
+      bottom: 0;
+      padding: 50px 0 50px 100px;
+      text-align: left;
+    }
+
+    .plants-info-box {
+      padding: 50px 100px 50px 0;
+      text-align: right;
+      left: 0;
+      top: 0;
+    }
+
+    .img-container-bottom {
+      right: -100px;
+      top: 60px;
+      box-shadow: -40px 40px 0px -21px $primary-accent;
+    }
+  }
+}
+
+// MIDDLE LINKS SECTION //
+//**********************//
+
+.middle-links {
+  background-color: $primary;
+}
