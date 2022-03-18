@@ -280,7 +280,7 @@ h5 {
 }
 
 h6 {
-  font-family: "Roboto";
+  font-family: "Josefin Sans";
   font-size: 2rem;
   font-weight: 700;
   line-height: 3.2rem;
@@ -311,6 +311,11 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .button-link {
@@ -655,7 +660,7 @@ img {
           justify-content: space-between;
 }
 .blog-main-flex .blog-left-flex {
-  width: 30%;
+  width: 33%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -672,7 +677,7 @@ img {
 .blog-main-flex .blog-left-flex .blog-left-img {
   position: absolute;
   top: 20px;
-  left: -91px;
+  right: 99.5px;
   width: 100%;
   z-index: 10;
 }
@@ -686,6 +691,24 @@ img {
   width: 80%;
   padding: 60px 15px;
   background-color: #ffffff;
+}
+.blog-main-flex .blog-left-flex .blog-about-box .inline-link {
+  text-decoration: none;
+  font-style: italic;
+  color: #074115;
+  font-weight: 700;
+}
+.blog-main-flex .blog-left-flex .blog-about-box ul {
+  margin-left: 25px;
+}
+.blog-main-flex .blog-left-flex .blog-about-box ul li::marker {
+  color: #0e902d;
+}
+.blog-main-flex .blog-left-flex .blog-about-box ul p {
+  margin: 0 0 0 10px;
+}
+.blog-main-flex .blog-left-flex .blog-about-box h5 {
+  margin: 0px 0 15px 0;
 }
 .blog-main-flex .blog-right-flex {
   width: 64%;
@@ -713,16 +736,20 @@ img {
   margin-bottom: 10px;
   font-size: 4.3rem;
   letter-spacing: 0.13rem;
-  border: 1px solid black;
 }
 .blog-main-flex .blog-right-flex .blog-post .blog-date {
   font-weight: 400;
+  font-style: italic;
 }
 .blog-main-flex .blog-right-flex .blog-post .blog-author {
   font-weight: 700;
+  font-style: normal;
 }
 .blog-main-flex .blog-right-flex .comment-section-flex {
   padding-left: 40px;
+}
+.blog-main-flex .blog-right-flex .comment-section-flex h4 {
+  margin: 40px 0;
 }
 .blog-main-flex .comment-box {
   display: -webkit-box;
@@ -731,10 +758,14 @@ img {
 }
 .blog-main-flex .comment-box .comment-img {
   padding-top: 8px;
-  width: 18%;
+  width: 17%;
 }
 .blog-main-flex .comment-box .comment-content {
-  width: 80%;
+  width: 82%;
+  margin-bottom: 60px;
+}
+.blog-main-flex .comment-box .comment-content p {
+  margin-top: 5px;
 }
 
 textarea {

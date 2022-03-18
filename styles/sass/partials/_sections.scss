@@ -182,7 +182,7 @@
   justify-content: space-between;
 
   .blog-left-flex {
-    width: 30%;
+    width: 33%;
     display: flex;
     margin-top: 70px;
     align-items: flex-start;
@@ -192,7 +192,8 @@
     .blog-left-img {
       position: absolute;
       top: 20px;
-      left: -91px;
+      // left: -99.5px;
+      right: 99.5px;
       width: 100%;
       z-index: 10;
 
@@ -207,6 +208,30 @@
       width: 80%;
       padding: 60px 15px;
       background-color: $secondary;
+
+      .inline-link {
+        text-decoration: none;
+        font-style: italic;
+        color: $secondary-text;
+        font-weight: 700;
+      }
+
+      ul {
+        margin-left: 25px;
+      }
+
+      ul li::marker {
+        color: $secondary-accent;
+      }
+
+      ul p {
+        margin: 0 0 0 10px;
+      }
+
+      h5 {
+        margin: 0px 0 15px 0;
+      }
+
     }
   }
 
@@ -237,21 +262,27 @@
         margin-bottom: 10px;
         font-size: 4.3rem;
         letter-spacing: 0.13rem;
-        border: 1px solid black;
       }
 
       // "Monday January 21st, 2019 by Yousra
       .blog-date {
         font-weight: 400;
+        font-style: italic;
       }
       
       .blog-author {
         font-weight: 700;
+        font-style: normal;
       }
     }
-    
+
     .comment-section-flex {
       padding-left: 40px;
+
+      // "Comments:"
+      h4 {
+        margin: 40px 0;
+      }
     }
   }
 
@@ -260,12 +291,16 @@
 
     .comment-img {
       padding-top: 8px;
-      width: 18%;
+      width: 17%;
     }
 
     .comment-content {
-      width: 80%
+      width: 82%;
+      margin-bottom: 60px;
+
+      p {
+        margin-top: 5px;
+      }
     }
   }
-
 }
