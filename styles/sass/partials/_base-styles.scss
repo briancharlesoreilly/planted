@@ -41,8 +41,10 @@ img {max-width: 100%; height: auto; display: block;}
   align-content: center;
 }
 
-// below is the css for the accent bottom-right box shadow effect
+// below is styling for box shadow accent bottom-right
 // box-shadow: 40px 40px 0px -21px $primary-accent;
+// below is styling for box shadow accent bottom-left
+// box-shadow: -40px 40px 0px -21px $primary-accent;
 
 .fa-solid {
   background-color: $primary-accent;

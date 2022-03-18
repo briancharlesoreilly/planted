@@ -450,6 +450,7 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
+  background-color: #f0efed;
 }
 .blog-header .wrapper.blog {
   display: -webkit-box;
@@ -623,6 +624,81 @@ img {
           box-shadow: 40px 40px 0px -21px #f8e71c;
 }
 
+.blog-main-section {
+  background-color: #f0efed;
+}
+
+.blog-main-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blog-main-flex .blog-left-flex {
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+.blog-main-flex .blog-left-flex .blog-left-img {
+  position: absolute;
+  top: 0;
+  left: -14.5%;
+  width: 100%;
+}
+.blog-main-flex .blog-left-flex .blog-left-img img {
+  -webkit-box-shadow: 40px 40px 0px -21px #ffffff;
+          box-shadow: 40px 40px 0px -21px #ffffff;
+}
+.blog-main-flex .blog-left-flex .blog-about-box {
+  position: absolute;
+  margin-top: 85%;
+}
+.blog-main-flex .blog-left-flex .blog-posts-box {
+  position: absolute;
+  top: 25%;
+}
+.blog-main-flex .blog-left-flex .blog-about-box,
+.blog-main-flex .blog-left-flex .blog-posts-box {
+  width: 90%;
+  padding: 20px 15px;
+  background-color: #ffffff;
+}
+.blog-main-flex .blog-right-flex {
+  width: 65%;
+  position: relative;
+}
+.blog-main-flex .blog-right-flex .blog-right-img {
+  position: absolute;
+  width: 100%;
+  top: -250px;
+  right: -15%;
+}
+.blog-main-flex .blog-right-flex .blog-right-img img {
+  -webkit-box-shadow: -40px 40px 0px -21px #f8e71c;
+          box-shadow: -40px 40px 0px -21px #f8e71c;
+}
+.blog-main-flex .blog-right-flex .blog-post {
+  margin-top: 10%;
+  margin-left: 13%;
+  padding: 20px;
+  -webkit-box-shadow: -25px 25px 0px -21px #f8e71c;
+          box-shadow: -25px 25px 0px -21px #f8e71c;
+}
+.blog-main-flex .blog-right-flex .blog-post h3 {
+  margin-top: 260px;
+}
+
 textarea {
   resize: none;
 }
@@ -645,6 +721,5 @@ footer p {
 @media (max-width: 1024px) {
   .blog-header {
     background-size: cover;
-    border: 4px solid pink;
   }
 }
