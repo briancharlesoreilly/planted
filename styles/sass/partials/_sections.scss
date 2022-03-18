@@ -72,4 +72,30 @@
 
 .middle-links {
   background-color: $primary;
+  padding: 200px 0 100px 0;
+}
+.middle-links-flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  .green-houses,
+  .community,
+  .blog,
+  .contact {
+    width: 50%;
+  }
+}
+
+// MID-BG IMAGE BLEED //
+//********************//
+
+.middle-bg-img {
+  max-width: 1800px; //will bleed for a while, but not forever.
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+  }
 }

@@ -481,6 +481,33 @@ img {
 
 .middle-links {
   background-color: #f0efed;
+  padding: 200px 0 100px 0;
+}
+
+.middle-links-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.middle-links-flex .green-houses,
+.middle-links-flex .community,
+.middle-links-flex .blog,
+.middle-links-flex .contact {
+  width: 50%;
+}
+
+.middle-bg-img {
+  max-width: 1800px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+.middle-bg-img img {
+  width: 100%;
 }
 
 textarea {
