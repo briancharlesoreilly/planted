@@ -588,16 +588,28 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
 }
-.photo-gallery-flex div {
+.photo-gallery-flex li {
   width: 32%;
 }
-.photo-gallery-flex div img:hover,
-.photo-gallery-flex div img:focus {
+.photo-gallery-flex li img:hover,
+.photo-gallery-flex li img:focus {
   -webkit-box-shadow: 40px 40px 0px -21px #f8e71c;
           box-shadow: 40px 40px 0px -21px #f8e71c;
 }
 
 textarea {
   resize: none;
+}
+
+footer {
+  background-color: #2c2c2c;
+  text-align: center;
+}
+footer p {
+  color: #f0efed;
+  padding: 8px;
+  margin: 0;
 }

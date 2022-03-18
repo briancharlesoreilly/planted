@@ -153,8 +153,10 @@
   display: flex;
   padding: 100px 0;
   justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
 
-  div {
+  li {
     width: 32%;
 
     img:hover,
@@ -163,5 +165,3 @@
     }
   }
 }
-
-// FOR FRIDAY ****** change the gallery img into an UL with LI its more semantically proper ******

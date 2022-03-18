@@ -1,1 +1,10 @@
-// just the juno contribution bar
+footer {
+  background-color: $primary-text;
+  text-align: center;
+
+  p {
+    color: $primary;
+    padding: 8px;
+    margin: 0;
+  }
+}
