@@ -312,6 +312,30 @@ img {
   transition: 0.1s;
 }
 
+.icon-leaf,
+.icon-ppl,
+.icon-file,
+.icon-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.fa-solid {
+  background-color: #f8e71c;
+  font-size: 3rem;
+  padding-top: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
 .nav-bar {
   background-color: transparent;
 }
@@ -496,6 +520,9 @@ img {
 .middle-links-flex .blog,
 .middle-links-flex .contact {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .middle-bg-img {
