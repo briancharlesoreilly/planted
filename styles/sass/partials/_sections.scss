@@ -182,50 +182,43 @@
   justify-content: space-between;
 
   .blog-left-flex {
-    width: 33%;
+    width: 30%;
     display: flex;
+    margin-top: 70px;
     align-items: flex-start;
     flex-direction: column;
     position: relative;
 
     .blog-left-img {
       position: absolute;
-      top: 0;
-      left: -14.5%;
+      top: 20px;
+      left: -91px;
       width: 100%;
+      z-index: 10;
 
       img {
-        box-shadow: 40px 40px 0px -21px $secondary;
+        box-shadow: 30px 0px 0px -15px $secondary;
       }
     }
 
     .blog-about-box {
       position: absolute;
       margin-top: 85%; 
-    }
-
-    .blog-posts-box {
-      position: absolute;
-      top: 25%;
-    }
-
-    .blog-about-box,
-    .blog-posts-box {
-      width: 90%;
-      padding: 20px 15px;
+      width: 80%;
+      padding: 60px 15px;
       background-color: $secondary;
     }
   }
 
   .blog-right-flex {
-    width: 65%;
+    width: 64%;
     position: relative;
 
     .blog-right-img {
       position: absolute;
-      width: 100%;
+      width: 105%;
       top: -250px;
-      right: -15%;
+      right: -6.85%;
 
       img {
         box-shadow: -40px 40px 0px -21px $primary-accent;
@@ -233,14 +226,46 @@
     }
 
     .blog-post {
-      margin-top: 10%;
-      margin-left: 13%;
-      padding: 20px;
+      width: 100%;
+      margin-top: 25%;
+      padding: 140px 40px 40px 40px;
       box-shadow: -25px 25px 0px -21px $primary-accent;
 
+      // "our mission at planted"
       h3 {
-        margin-top: 260px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        font-size: 4.3rem;
+        letter-spacing: 0.13rem;
+        border: 1px solid black;
+      }
+
+      // "Monday January 21st, 2019 by Yousra
+      .blog-date {
+        font-weight: 400;
+      }
+      
+      .blog-author {
+        font-weight: 700;
       }
     }
+    
+    .comment-section-flex {
+      padding-left: 40px;
+    }
   }
+
+  .comment-box {
+    display: flex;
+
+    .comment-img {
+      padding-top: 8px;
+      width: 18%;
+    }
+
+    .comment-content {
+      width: 80%
+    }
+  }
+
 }
