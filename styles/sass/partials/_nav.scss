@@ -5,7 +5,8 @@
 .nav-bar {
   background-color: transparent;
 }
-.blog-header .nav-bar,
+
+.nav-bar.blog-nav,
 .contact-header .nav-bar {
   background-color: $navbar-bg;
 }
@@ -17,7 +18,7 @@
   justify-content: space-between;
   align-items: flex-end;
   margin: 0;
-  padding: 25px 0 10px 0;
+  padding: 20px 0 10px 0;
 
   li {
     padding: 10px 10px;
