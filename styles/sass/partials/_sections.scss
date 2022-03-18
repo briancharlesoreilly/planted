@@ -28,6 +28,7 @@
     position: relative;
     margin-top: 400px;
     margin-bottom: 400px;
+    // check back with below, not sure why there
     // width: 100%;
     // max-width: 1400px;
 
@@ -86,6 +87,17 @@
     display: flex;
   }
 
+  .icon-leaf-right,
+  .community-right,
+  .blog-right,
+  .contact-right {
+    padding: 10px 10px 0 20px;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
 }
 
 // MID-BG IMAGE BLEED //
@@ -101,3 +113,55 @@
     width: 100%;
   }
 }
+
+//   FOUNDER SECTION   //
+//*********************//
+
+.founder {
+  background-color: $primary;
+}
+
+.founder-flex {
+  display: flex;
+  padding: 150px 0 100px 0;
+
+  .founder-img-container {
+    width: 33%;
+
+    img {
+      box-shadow: 40px 40px 0px -21px $primary-accent;
+    }
+  }
+
+  .founder-info {
+    width: 65%;
+
+    p {
+      margin-bottom: 40px;
+    }
+  }
+
+  h4 {
+    margin: 0;
+  }
+}
+
+// PHOTO GALLERY SECTION //
+//***********************//
+
+.photo-gallery-flex {
+  display: flex;
+  padding: 100px 0;
+  justify-content: space-between;
+
+  div {
+    width: 32%;
+
+    img:hover,
+    img:focus {
+      box-shadow: 40px 40px 0px -21px $primary-accent;
+    }
+  }
+}
+
+// FOR FRIDAY ****** change the gallery img into an UL with LI its more semantically proper ******

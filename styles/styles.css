@@ -263,6 +263,13 @@ h3 {
   color: #2c2c2c;
 }
 
+h4 {
+  font-family: "Josefin Sans";
+  font-size: 4.2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
 p {
   font-size: 2rem;
   line-height: 3.2rem;
@@ -524,6 +531,15 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
+.middle-links-flex .icon-leaf-right,
+.middle-links-flex .community-right,
+.middle-links-flex .blog-right,
+.middle-links-flex .contact-right {
+  padding: 10px 10px 0 20px;
+}
+.middle-links-flex h3 {
+  margin: 0;
+}
 
 .middle-bg-img {
   max-width: 1800px;
@@ -535,6 +551,51 @@ img {
 }
 .middle-bg-img img {
   width: 100%;
+}
+
+.founder {
+  background-color: #f0efed;
+}
+
+.founder-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 150px 0 100px 0;
+}
+.founder-flex .founder-img-container {
+  width: 33%;
+}
+.founder-flex .founder-img-container img {
+  -webkit-box-shadow: 40px 40px 0px -21px #f8e71c;
+          box-shadow: 40px 40px 0px -21px #f8e71c;
+}
+.founder-flex .founder-info {
+  width: 65%;
+}
+.founder-flex .founder-info p {
+  margin-bottom: 40px;
+}
+.founder-flex h4 {
+  margin: 0;
+}
+
+.photo-gallery-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.photo-gallery-flex div {
+  width: 32%;
+}
+.photo-gallery-flex div img:hover,
+.photo-gallery-flex div img:focus {
+  -webkit-box-shadow: 40px 40px 0px -21px #f8e71c;
+          box-shadow: 40px 40px 0px -21px #f8e71c;
 }
 
 textarea {
