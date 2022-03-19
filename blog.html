@@ -94,16 +94,24 @@
           <div class="comment-container"> <!-- comment container BEGINS -->
 
             <form action="#" method="post" class="comment-form">
-              <label for="name" class="sr-only"></label>
-              <input type="text" id="name" placeholder="Name">
 
-              <label for="email" class="sr-only"></label>
-              <input type="text" id="email" placeholder="Email address">
+              <div class="form-input">
+                <label for="name" class="sr-only"></label>
+                <input type="text" id="name" placeholder="Name">
+              </div>
 
-              <label for="message" class="sr-only">Message for me</label>
-              <textarea name="message" id="message" cols="30" rows="10" placeholder="Comment"></textarea>
+              <div class="form-input">
+                <label for="email" class="sr-only"></label>
+                <input type="text" id="email" placeholder="Email address">
+              </div>
 
-              <button>Post Comment</button>
+              <div class="textarea">
+                <label for="message" class="sr-only">Message for me</label>
+                <textarea name="message" id="message" cols="30" rows="6" placeholder="Comment"></textarea>
+  
+                <button>Post Comment</button>
+              </div>
+
             </form>
           </div> <!-- comment container ENDS -->
         </div> <!-- blog-right side bar ENDS -->

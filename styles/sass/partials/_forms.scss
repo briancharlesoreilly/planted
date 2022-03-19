@@ -1,3 +1,94 @@
-textarea {
-  resize: none;
+// form styling, forms in blog.html and contact.html
+
+.comment-form {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  input, textarea {
+    border: none;
+    background-color: $primary;
+    width: 100%;
+    font-family: $heading-font;
+    color: $primary-text;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    font-weight: 400;
+
+    &::placeholder {
+      opacity: 0.6;
+      font-weight: 300;
+    }
+
+    &:hover,
+    &:focus {
+      outline: 2px solid $secondary-accent;
+
+      &::placeholder {
+        opacity: 1;
+      }
+    }
+  }
+
+  .form-input {
+    width: calc(50% - 10px);
+    padding: 15px 0;
+  
+    
+    input {
+      padding: 5px 0 20px 30px;
+      border-bottom: 2px solid $secondary-accent;
+    }
+  }
+
+  .textarea {
+    width: 100%;
+    margin: 10px 0;
+
+    textarea {
+      resize: none;
+      margin: 20px 0 10px 0;
+      padding: 40px 0 20px 30px;
+      border: 2px solid $secondary-accent;
+    }
+
+    button {
+      width: 100%;
+      padding: 8px;
+      border: none;
+      margin: 40px 0 60px 0;
+      font-family: $heading-font;
+      font-weight: 700;
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      line-height: 3.2rem;
+      background-color: $secondary-accent;
+      color: $primary;
+
+      &:hover,
+      &:focus {
+        background-color: $primary;
+        color: $secondary-accent;
+        outline: 2px solid $secondary-accent;
+      }
+    }
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+button {
+  margin: 10px 0;
+} 
+
+
+

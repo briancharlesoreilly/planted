@@ -51,16 +51,24 @@
       <div class="contact">
         <div class="comment-form-container"> <!-- comment container BEGINS -->
           <form action="#" method="post" class="comment-form">
-            <label for="name" class="sr-only"></label>
-            <input type="text" id="name" placeholder="Name">
+
+            <div class="form-input">
+              <label for="name" class="sr-only"></label>
+              <input type="text" id="name" placeholder="Name">
+            </div>
         
-            <label for="email" class="sr-only"></label>
-            <input type="text" id="email" placeholder="Email address">
+            <div class="form-input">
+              <label for="email" class="sr-only"></label>
+              <input type="text" id="email" placeholder="Email address">
+            </div>
         
-            <label for="message" class="sr-only">Message for me</label>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+            <div class="textarea">
+              <label for="message" class="sr-only">Message for me</label>
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+
+              <button>Submit</button>
+            </div>
         
-            <button>Submit</button>
           </form>
         </div> <!-- comment container ENDS -->
         <div class="img-accent-left"></div> <!-- offset img accent border -->
