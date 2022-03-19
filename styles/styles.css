@@ -797,35 +797,90 @@ ul {
   margin-top: 5px;
 }
 
+.contact-body {
+  background-color: #f0efed;
+}
+
 .contact-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  top: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.contact-flex .contact-left-flex {
+
+.contact-left-flex {
   width: 30%;
-  margin-top: 200px;
+  margin-top: 25%;
 }
-.contact-flex .contact-left-flex .social-icons ul {
+.contact-left-flex .social-icons ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
-  color: #0e902d;
   font-size: 2rem;
 }
-.contact-flex .contact-left-flex .social-icons ul li {
+.contact-left-flex .social-icons ul li {
   padding-right: 20px;
 }
-.contact-flex .contact-left-flex .contact-info a {
+.contact-left-flex .social-icons ul li a {
+  text-decoration: none;
+  color: #0e902d;
+  padding: 5px;
+}
+.contact-left-flex .social-icons ul li a:hover, .contact-left-flex .social-icons ul li a:focus {
+  outline: 2px solid #0e902d;
+}
+.contact-left-flex .contact-info .address:hover, .contact-left-flex .contact-info .address:focus {
+  text-decoration: underline;
+  color: inherit;
+}
+.contact-left-flex .contact-info .telephone:hover, .contact-left-flex .contact-info .telephonefocus {
+  text-decoration: underline;
+  color: inherit;
+}
+.contact-left-flex .contact-info p {
+  margin: 0;
+}
+.contact-left-flex .contact-info a {
   text-decoration: none;
 }
-.contact-flex .contact-left-flex .contact-info a p {
-  margin: 0;
-  padding: 20px 0;
+.contact-left-flex .contact-info a .email {
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  margin: 20px 0;
 }
-.contact-flex .contact-left-flex .contact-right-flex {
-  width: 70%;
+.contact-left-flex .contact-info a .email:hover, .contact-left-flex .contact-info a .email:focus {
+  text-decoration: underline;
+}
+
+.contact-right-flex {
+  width: 60%;
+  margin-right: 60px;
+}
+
+.comment-form-container {
+  background-color: #ffffff;
+  height: 100%;
+  -webkit-box-shadow: -40px 40px 0px -21px #f8e71c;
+          box-shadow: -40px 40px 0px -21px #f8e71c;
+  padding: 60px 40px 0 40px;
+}
+.comment-form-container .comment-form input, .comment-form-container .comment-form textarea {
+  background-color: #ffffff;
+}
+.comment-form-container .comment-form .textarea button {
+  margin: 30px 0;
+}
+
+footer {
+  position: absolute;
+  bottom: -50%;
+  right: 0;
+  left: 0;
 }
 
 .comment-form {

@@ -317,39 +317,112 @@
 //******************/
 // CONTACT STYLINGS /
 //******************/
+.contact-body {
+  background-color: $primary;
+  // position: relative;
+}
 
 .contact-flex {
   display: flex;
+  position: absolute;
+  top: 40%;
+  justify-content: space-between;
+}
 
-  .contact-left-flex {
-    width: 30%;
-    margin-top: 200px;
+// left flex box
+.contact-left-flex {
+  width: 30%;
+  // margin-top: 400px;
+  margin-top: 25%;
 
-    .social-icons ul {
+  .social-icons ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 2rem;
 
-      display: flex;
-      list-style-type: none;
-      color: $secondary-accent;
-      font-size: 2rem;
+    li {
+      padding-right: 20px;
 
-      li {
-        padding-right: 20px;
-      }
-    }
-
-    .contact-info {
       a {
         text-decoration: none;
+        color: $secondary-accent;
+        padding: 5px;
 
-      p {
-        margin: 0;
-        padding: 20px 0;
+        &:hover,
+        &:focus {
+          outline: 2px solid $secondary-accent;
+        }
       }
     }
   }
 
-  .contact-right-flex {
-    width: 70%;
+  .contact-info {
+    .address {
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+        color: inherit;
+      }
+    }
+
+    .telephone {
+      &:hover,
+      &focus {
+        text-decoration: underline;
+        color: inherit;
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+    a {
+      text-decoration: none;
+
+      .email {
+        font-family: $heading-font;
+        font-weight: 700;
+        margin: 20px 0;
+
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+      }
     }
   }
 }
+
+// right flex box
+.contact-right-flex {
+  width: 60%;
+  margin-right: 60px;
+}
+
+.comment-form-container {
+  background-color: $secondary;
+  height: 100%;
+  box-shadow: -40px 40px 0px -21px $primary-accent;
+  padding: 60px 40px 0 40px;
+
+  .comment-form {
+    input, textarea {
+      background-color: $secondary;
+    }
+
+    .textarea{
+      button {
+        margin: 30px 0;
+      }
+    }
+  }
+}
+
+// footer contact page
+footer {
+  position: absolute;
+  bottom: -50%;
+  right: 0;
+  left: 0;
+}
+
