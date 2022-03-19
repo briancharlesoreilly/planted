@@ -1,30 +1,151 @@
-// minor breakpoints
+// ********************
+//    SMALL DESKTOPS 
+// ********************
+
 @media (max-width: 1120px) {
-// move BLOG h2 closer to top of section as screen shrinks
+// index.html adjustments
+  .workshops .wrapper .workshops-info-box,
+  .workshops .wrapper .plants-info-box {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .founder-flex .founder-info {
+    padding-left: 30px;
+  }
+// blog.html adjustments
+  .blog-main-flex {
+    .blog-left-flex {
+      margin-top: 0;
+
+      .blog-about-box {
+        width: 100%;
+        margin-top: 50px;
+      }
+
+      .blog-left-img {
+        position: relative;
+        top: -200px;
+        right: 19px;
+
+        img {
+          box-shadow: 40px 40px 0px -21px $secondary;
+        }
+      }
+    }
+    .blog-right-flex {
+      .blog-post {
+        margin-top: 0;
+        padding: 80px 20px 20px 20px
+      }
+
+      .blog-right-img {
+        top: -350px;
+        right: -7.3%;
+      }
+    }
+
+    .comment-box {
+      .comment-content {
+        padding-left: 20px;
+      }
+    }
+  }
+
   .blog-h2 {
   margin-top: 0;
   }
-}
+} //media (max-width: 1120px) ENDS
 
-// major breakpoints
+// ********************
+//    TABLETS | IPADS 
+// ********************
 
 @media (max-width: 1024px) {
-// BLOG.HTML 
-// HEADER
-.blog-header {
-  background-size: cover;
+// general 
+  .wrapper {
+    width: 95%;
   }
 
+// nav bar
+  .flex-nav-container {
+    width: 100%;
+  }
+
+// index.html
+// **********
+
+// about
+  .about .wrapper {
+    padding: 150px 0;
+  }
+
+// workshops
+  .workshops {
+    .wrapper {
+      position: static;
+      margin: 100px auto;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .workshops .wrapper {
+    .img-container-top,
+    .workshops-info-box,
+    .plants-info-box,
+    .img-container-bottom {
+      position: static;
+      box-shadow: none;
+      width: 49%;
+      }
+    }
+
+  .workshops .wrapper .img-container-bottom {
+    padding-left: 20px;
+
+    img {
+      box-shadow: -40px 40px 0px -21px $primary-accent;
+      }
+    }
+
+  .workshops .wrapper .img-container-top {
+    padding-right: 20px;
+
+    img {
+      box-shadow: 40px 40px 0px -21px $primary-accent;
+    }
+  }
+
+// middle links 
+  .middle-links {
+    padding: 100px 0;
+  }
+} // media (max-width: 1024px) ENDS
+
+
+//    MINOR BREAKPOINT 
+// ********************
+//  fixing some header issues on blog.html and contact.html
+@media (max-width: 900px) {
+  
 }
 
-// @media (max-width: 768px) {
 
-// }
+// ********************
+//    lARGE PHONES 
+// ********************
+@media (max-width: 768px) {
 
-// @media (max-width: 540px) {
+}
+// ********************
+//    MID SIZE PHONES 
+// ********************
+@media (max-width: 540px) {
 
-// }
+}
+// ********************
+//    SMALL PHONES 
+// ********************
+@media (max-width: 410px) {
 
-// @media (max-width: 410px) {
-
-// }
+}
