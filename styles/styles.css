@@ -876,7 +876,7 @@ ul {
   margin: 30px 0;
 }
 
-footer {
+.blog-footer {
   position: absolute;
   bottom: -50%;
   right: 0;
