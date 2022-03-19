@@ -491,6 +491,35 @@ ul {
   margin-top: 20%;
 }
 
+.contact-header {
+  background-image: url(../assets/contact-header-1.jpg);
+  width: 100%;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: #f0efed;
+}
+.contact-header .wrapper.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 85%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.contact-header .wrapper.contact div {
+  width: 35%;
+}
+.contact-header h1 {
+  margin: 30px 0;
+  font-size: 8rem;
+  line-height: 9.2rem;
+  color: #f8e71c;
+  font-weight: 700;
+}
+
 .about {
   background-color: #f0efed;
 }
@@ -766,6 +795,37 @@ ul {
 }
 .blog-main-flex .comment-box .comment-content p {
   margin-top: 5px;
+}
+
+.contact-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact-flex .contact-left-flex {
+  width: 30%;
+  margin-top: 200px;
+}
+.contact-flex .contact-left-flex .social-icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  color: #0e902d;
+  font-size: 2rem;
+}
+.contact-flex .contact-left-flex .social-icons ul li {
+  padding-right: 20px;
+}
+.contact-flex .contact-left-flex .contact-info a {
+  text-decoration: none;
+}
+.contact-flex .contact-left-flex .contact-info a p {
+  margin: 0;
+  padding: 20px 0;
+}
+.contact-flex .contact-left-flex .contact-right-flex {
+  width: 70%;
 }
 
 .comment-form {
