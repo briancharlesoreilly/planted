@@ -127,6 +127,8 @@
 // ********************
 //  fixing some header issues on blog.html and contact.html
 @media (max-width: 900px) {
+
+// blog.html
   .wrapper {
     width: 100%;
   }
@@ -201,7 +203,35 @@
     padding: 0 15px;
   }
 
-}
+// contact.html
+  .flex-nav-container {
+    .logo-li {
+      padding: 10px 20px;
+    }
+  }
+
+  .contact-header {
+    .wrapper.contact {
+      width: 95%;
+    }
+  }
+
+  .contact-page-main {
+    .wrapper {
+      width: 95%;
+    }
+
+    .contact-left-flex {
+      margin-top: 35%;
+    }
+  }
+
+  .comment-form {
+    .form-input {
+      width: 100%;
+    }
+  }
+} // media (max-width: 900px) ENDS
 
 
 // ********************

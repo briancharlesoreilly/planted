@@ -407,6 +407,9 @@ ul {
 .flex-nav-container a:hover {
   color: #f8e71c;
 }
+.flex-nav-container a:focus {
+  outline: 1px solid #f8e71c;
+}
 .flex-nav-container .current-page {
   color: #f8e71c;
 }
@@ -1161,5 +1164,24 @@ footer p {
 
   .comment-container {
     padding: 0 15px;
+  }
+
+  .flex-nav-container .logo-li {
+    padding: 10px 20px;
+  }
+
+  .contact-header .wrapper.contact {
+    width: 95%;
+  }
+
+  .contact-page-main .wrapper {
+    width: 95%;
+  }
+  .contact-page-main .contact-left-flex {
+    margin-top: 35%;
+  }
+
+  .comment-form .form-input {
+    width: 100%;
   }
 }

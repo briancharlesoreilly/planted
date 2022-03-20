@@ -36,8 +36,13 @@
     text-decoration: none;
     text-transform: uppercase;
     }
+
     a:hover {
       color: $primary-accent;
+    }
+
+    a:focus {
+      outline: 1px solid $primary-accent;
     }
 
   .current-page {
