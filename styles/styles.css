@@ -1170,6 +1170,9 @@ footer p {
     padding: 10px 20px;
   }
 
+  .contact-header h1 {
+    font-size: 7rem;
+  }
   .contact-header .wrapper.contact {
     width: 95%;
   }
@@ -1304,5 +1307,19 @@ footer p {
     max-width: none;
     width: 100%;
     margin: 0 auto;
+  }
+
+  .blog-header {
+    height: 50vh;
+    border-top: 10px solid #f8e71c;
+  }
+
+  .blog-h2 {
+    font-size: 8rem;
+    padding-left: 30px;
+  }
+
+  .blog-main-flex .blog-left-flex .blog-left-img {
+    max-height: 400px;
   }
 }

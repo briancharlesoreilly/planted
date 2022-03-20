@@ -211,6 +211,10 @@
   }
 
   .contact-header {
+    h1 {
+      font-size: 7rem;
+    }
+
     .wrapper.contact {
       width: 95%;
     }
@@ -361,8 +365,30 @@
 // blog.html
 // **********
 
+// header
+  .blog-header {
+    height: 50vh;
+    border-top: 10px solid $primary-accent;
+  }
+
+  .blog-h2 {
+    font-size: 8rem;
+    padding-left: 30px;
+  }
+
+  .blog-main-flex {
+    .blog-left-flex {
+      .blog-left-img {
+        max-height: 400px;
+      }
+    }
+  }
+
 // contact.html
 // **********
+
+
+
 
 } // media (max-width: 768px) ENDS
 
