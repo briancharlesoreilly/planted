@@ -239,16 +239,161 @@
 // ********************
 @media (max-width: 768px) {
 
-}
+// nav bar stylings
+  .flex-nav-container {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      padding: 20px 20px;
+
+      a {
+        font-size: 4rem;
+      }
+    }
+
+    .logo-li {
+      display: none;
+    }
+  }
+
+// button styling
+  .button-link {
+    font-size: 3rem;
+    width: 100%;
+    display: block;
+  }
+
+// index.html
+// **********
+
+//header
+  .home-header {
+    height: 800px;
+
+    .header-text {
+      align-items: flex-start;
+
+      h1 {
+        font-size: 13rem;
+        margin-top: 60px;
+      }
+    }
+  }
+// about section
+  .about .wrapper {
+    width: 95%;
+  }
+
+// workshops section
+  .workshops {
+    .wrapper {
+      flex-direction: column;
+
+      .img-container-top,
+      .workshops-info-box,
+      .plants-info-box,
+      .img-container-bottom {
+        padding: 20px 0;
+        width: 95%;
+        text-align: center;
+      }
+    }
+  }
+
+// middle-links section
+  .middle-links-flex {
+    flex-direction: column;
+    align-items: center;
+
+    .green-houses,
+    .community,
+    .blog,
+    .contact {
+      width: 95%;
+    }
+  }
+
+// founder section
+  .founder-flex {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+
+    .founder-info {
+      padding: 0;
+      margin: 70px 0;
+      text-align: center;
+    }
+
+    .founder-img-container {
+      img {
+        max-width: none;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+
+    .founder-img-container,
+    .founder-info {
+      width: 100%;
+    }
+  }
+
+// photo gallery section
+  .photo-gallery-flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      width: 90%;
+      padding: 20px 0;
+
+      img {
+        max-width: none;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+// blog.html
+// **********
+
+// contact.html
+// **********
+
+} // media (max-width: 768px) ENDS
+
 // ********************
 //    MID SIZE PHONES 
 // ********************
 @media (max-width: 540px) {
 
-}
+// index.html
+// **********
+
+// blog.html
+// **********
+
+// contact.html
+// **********
+
+} // media (max-width: 540px) ENDS
+
 // ********************
 //    SMALL PHONES 
 // ********************
 @media (max-width: 410px) {
 
-}
+// index.html
+// **********
+
+// blog.html
+// **********
+
+// contact.html
+// **********
+
+} // media (max-width: 410px) ENDS

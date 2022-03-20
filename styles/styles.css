@@ -1185,3 +1185,124 @@ footer p {
     width: 100%;
   }
 }
+@media (max-width: 768px) {
+  .flex-nav-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .flex-nav-container li {
+    padding: 20px 20px;
+  }
+  .flex-nav-container li a {
+    font-size: 4rem;
+  }
+  .flex-nav-container .logo-li {
+    display: none;
+  }
+
+  .button-link {
+    font-size: 3rem;
+    width: 100%;
+    display: block;
+  }
+
+  .home-header {
+    height: 800px;
+  }
+  .home-header .header-text {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .home-header .header-text h1 {
+    font-size: 13rem;
+    margin-top: 60px;
+  }
+
+  .about .wrapper {
+    width: 95%;
+  }
+
+  .workshops .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .workshops .wrapper .img-container-top,
+.workshops .wrapper .workshops-info-box,
+.workshops .wrapper .plants-info-box,
+.workshops .wrapper .img-container-bottom {
+    padding: 20px 0;
+    width: 95%;
+    text-align: center;
+  }
+
+  .middle-links-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .middle-links-flex .green-houses,
+.middle-links-flex .community,
+.middle-links-flex .blog,
+.middle-links-flex .contact {
+    width: 95%;
+  }
+
+  .founder-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 10px;
+  }
+  .founder-flex .founder-info {
+    padding: 0;
+    margin: 70px 0;
+    text-align: center;
+  }
+  .founder-flex .founder-img-container img {
+    max-width: none;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .founder-flex .founder-img-container,
+.founder-flex .founder-info {
+    width: 100%;
+  }
+
+  .photo-gallery-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .photo-gallery-flex li {
+    width: 90%;
+    padding: 20px 0;
+  }
+  .photo-gallery-flex li img {
+    max-width: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
