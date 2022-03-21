@@ -1293,6 +1293,9 @@ footer p {
 
   .middle-bg-img {
     background-size: contain;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .middle-bg-img img {
     max-width: none;

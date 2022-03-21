@@ -350,6 +350,7 @@
 //  middle bg full bleed image
   .middle-bg-img {
     background-size: contain;
+    align-items: flex-start;
 
     img {
       max-width: none;
