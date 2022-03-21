@@ -299,10 +299,21 @@
     .wrapper {
       flex-direction: column;
 
-      .img-container-top,
+      .img-container-top img,
+      .img-container-bottom img {
+        max-width: none;
+        width: 100%;
+        box-shadow: none;
+      }
+
+      .img-container-bottom,
+      .img-container-top {
+        padding: 20px 0;
+        width: 100%;
+      }
+
       .workshops-info-box,
-      .plants-info-box,
-      .img-container-bottom {
+      .plants-info-box {
         padding: 20px 0;
         width: 95%;
         text-align: center;
@@ -486,13 +497,50 @@
 
 // index.html
 // **********
+  .home-header {
+    .header-img {
+      display: none;
+    }
 
-// blog.html
-// **********
+    .header-text {
+      h1 {
+        font-size: 10rem;
+      }
+    }
+  }
 
-// contact.html
-// **********
+  .about {
+    .wrapper {
+      width: 100%;
+      padding: 70px 15px;
+      border-top: 10px solid $primary-accent;
+      border-bottom: 10px solid $primary-accent;
+    }
+  }
 
+  .workshops {
+    .wrapper {
+      margin: 0;
+
+      .img-container-top {
+        padding: 0;
+      }
+
+      .img-container-bottom {
+        padding: 40px 0 0 0;
+      }
+    }
+  }
+
+  .middle-links {
+    border-top: 10px solid $primary-accent;
+    border-bottom: 10px solid $primary-accent;
+  }
+
+  .founder {
+    padding: 0 15px;
+    border-bottom: 10px solid $primary-accent;
+  }
 } // media (max-width: 540px) ENDS
 
 // ********************
@@ -502,11 +550,31 @@
 
 // index.html
 // **********
+  .home-header {
+    height: 700px;
+
+    .header-text {
+      h1 {
+      font-size: 7rem;
+      }
+    }
+  }
 
 // blog.html
 // **********
+  .blog-main-flex {
+    .comment-box {
+      flex-direction: column;
+      align-items: flex-start;
 
-// contact.html
-// **********
+      .comment-content {
+        width: 100%;
+        padding: 20px 0 0 0;
+      }
 
+      .comment-img {
+        width: 50%;
+      }
+    }
+  }
 } // media (max-width: 410px) ENDS

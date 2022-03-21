@@ -1241,10 +1241,20 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .workshops .wrapper .img-container-top,
-.workshops .wrapper .workshops-info-box,
-.workshops .wrapper .plants-info-box,
-.workshops .wrapper .img-container-bottom {
+  .workshops .wrapper .img-container-top img,
+.workshops .wrapper .img-container-bottom img {
+    max-width: none;
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .workshops .wrapper .img-container-bottom,
+.workshops .wrapper .img-container-top {
+    padding: 20px 0;
+    width: 100%;
+  }
+  .workshops .wrapper .workshops-info-box,
+.workshops .wrapper .plants-info-box {
     padding: 20px 0;
     width: 95%;
     text-align: center;
@@ -1400,5 +1410,65 @@ footer p {
   }
   .contact-header .wrapper.contact .about-header-div h1 {
     padding: 0 15px;
+  }
+}
+@media (max-width: 540px) {
+  .home-header .header-img {
+    display: none;
+  }
+  .home-header .header-text h1 {
+    font-size: 10rem;
+  }
+
+  .about .wrapper {
+    width: 100%;
+    padding: 70px 15px;
+    border-top: 10px solid #f8e71c;
+    border-bottom: 10px solid #f8e71c;
+  }
+
+  .workshops .wrapper {
+    margin: 0;
+  }
+  .workshops .wrapper .img-container-top {
+    padding: 0;
+  }
+  .workshops .wrapper .img-container-bottom {
+    padding: 40px 0 0 0;
+  }
+
+  .middle-links {
+    border-top: 10px solid #f8e71c;
+    border-bottom: 10px solid #f8e71c;
+  }
+
+  .founder {
+    padding: 0 15px;
+    border-bottom: 10px solid #f8e71c;
+  }
+}
+@media (max-width: 410px) {
+  .home-header {
+    height: 700px;
+  }
+  .home-header .header-text h1 {
+    font-size: 7rem;
+  }
+
+  .blog-main-flex .comment-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .blog-main-flex .comment-box .comment-content {
+    width: 100%;
+    padding: 20px 0 0 0;
+  }
+  .blog-main-flex .comment-box .comment-img {
+    width: 50%;
   }
 }
