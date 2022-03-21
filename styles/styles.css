@@ -1094,6 +1094,19 @@ footer p {
   }
 }
 @media (max-width: 900px) {
+  .about .wrapper,
+.workshops .wrapper,
+.middle-links .wrapper,
+.founder .wrapper {
+    width: 95%;
+  }
+
+  .founder .wrapper .founder-flex {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
   .wrapper {
     width: 100%;
   }
@@ -1236,6 +1249,7 @@ footer p {
   }
 
   .workshops .wrapper {
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

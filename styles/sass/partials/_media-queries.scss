@@ -127,6 +127,19 @@
 // ********************
 //  fixing some header issues on blog.html and contact.html
 @media (max-width: 900px) {
+// index.html
+  .about .wrapper,
+  .workshops .wrapper,
+  .middle-links .wrapper,
+  .founder .wrapper {
+    width: 95%;
+  }
+
+  .founder .wrapper {
+    .founder-flex {
+      justify-content: space-between;
+    }
+  }
 
 // blog.html
   .wrapper {
@@ -242,7 +255,6 @@
   }
 } // media (max-width: 900px) ENDS
 
-
 // ********************
 //    lARGE PHONES 
 // ********************
@@ -297,6 +309,7 @@
 // workshops section
   .workshops {
     .wrapper {
+      width: 100%;
       flex-direction: column;
 
       .img-container-top img,
