@@ -1296,6 +1296,7 @@ footer p {
   }
   .middle-bg-img img {
     max-width: none;
+    width: 100%;
   }
 
   .founder-flex {
