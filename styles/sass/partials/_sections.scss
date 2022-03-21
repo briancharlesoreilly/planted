@@ -106,8 +106,10 @@
 .middle-bg-img {
   max-width: 1800px; //will bleed for a while, but not forever.
   width: 100%;
+  height: auto;
   display: flex;
   margin: 0 auto;
+  
 
   img {
     width: 100%;
