@@ -350,6 +350,10 @@
 //  middle bg full bleed image
   .middle-bg-img {
     background-size: contain;
+
+    img {
+      max-width: none;
+    }
   }
 
 

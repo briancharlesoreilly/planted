@@ -623,6 +623,7 @@ ul {
 .middle-bg-img {
   max-width: 1800px;
   width: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1288,6 +1289,13 @@ footer p {
 .middle-links-flex .blog,
 .middle-links-flex .contact {
     width: 95%;
+  }
+
+  .middle-bg-img {
+    background-size: contain;
+  }
+  .middle-bg-img img {
+    max-width: none;
   }
 
   .founder-flex {
