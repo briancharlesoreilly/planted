@@ -366,6 +366,21 @@ ul {
   text-align: center;
 }
 
+.hamburger-menu-slide {
+  display: none;
+}
+
+.burger-slide-out {
+  background-color: saddlebrown;
+}
+
+.flex-nav-container.burger-nav {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .nav-bar {
   background-color: transparent;
 }

@@ -2,6 +2,22 @@
 
 // NOTE: the background of the nav bar is TRANSPARENT on the index.html/homepage
 
+// Hamburger Menu for mobile and small screens
+// hiding hamburger menu until media query needs it
+.hamburger-menu-slide {
+  display: none;
+}
+
+.burger-slide-out {
+  background-color: saddlebrown; // change this, just a working color
+}
+
+.flex-nav-container.burger-nav {
+  flex-direction: column;
+
+}
+
+// regular nav bar stylings
 .nav-bar {
   background-color: transparent;
 }

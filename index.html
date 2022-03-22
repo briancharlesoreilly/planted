@@ -16,13 +16,36 @@
   <header class="home-header"> <!-- header STARTS -->
     <nav class="nav-bar"> <!-- .nav-bar STARTS -->
       <div class="wrapper"> <!-- .nav-bar .wrapper STARTS -->
-        <ul class="flex-nav-container">
+
+        <div class="hamburger-menu-slide">  <!-- Hamburger menu STARTS -->
+          <input type="checkbox" name="hamburger-menu" id="hamburger-menu" class="hamburger-menu-button">
+          <label for="hamburger-menu" class="hamburger-menu-button">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+
+          <div class="burger-slide-out">
+            <div class="close-button">
+              <button>x</button>
+            </div>
+            <nav>
+              <ul class="flex-nav-container burger-nav">
+                <li class="logo-li"><p class="logo">Planted</p></li>
+                <li><a href="./index.html" class="current-page">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div> <!-- Hamburger menu ENDS -->
+
+        <ul class="flex-nav-container"> <!-- regular nav bar menu STARTS -->
           <li class="logo-li"><p class="logo">Planted</p></li>
           <li><a href="./index.html" class="current-page">Home</a></li>
           <li><a href="./about.html">About</a></li>
           <li><a href="./blog.html">Blog</a></li>
           <li><a href="./contact.html">Contact</a></li>
-        </ul>
+        </ul> <!-- regular nav bar menu ENDS -->
       </div> <!-- .nav-bar .wrapper ENDS -->
     </nav> <!-- .nav-bar ENDS -->
 
