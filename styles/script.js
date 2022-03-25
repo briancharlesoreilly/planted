@@ -26,6 +26,10 @@ console.log(commentForm);
 // store button element
 const button = commentForm.querySelector("button");
 
+// store avatar div
+const avatarModal = document.querySelector(".avatar");
+console.log(avatarModal);
+
 // listen for when button is clicked
 button.addEventListener("click", postComment);
 
@@ -44,6 +48,12 @@ const userComment = document.getElementById("message").value;
     console.log(userName);
     console.log(userEmail);
     console.log(userComment);
+// popup modal to choose avatar
+    avatarModal.style.display = "flex";
+
+
+
+
   } else {
     alert(`Please fill in all fields (name, email and comment) to post a comment! Thank you :)`);
   }

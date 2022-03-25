@@ -1,10 +1,16 @@
 .avatar {
-  display: none; 
-  max-width: 600px;
+  display: flex;
+  // display: none;
   width: 100%;
-  padding: 20px;
+  justify-content: center;
+  align-items: center; 
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
 
   .avatar-content {
+    padding: 20px;
+    max-width: 500px;
+    width: 80%;
     background-color: transparent;
 
     button {
