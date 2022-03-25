@@ -1049,6 +1049,32 @@ button {
   margin: 10px 0;
 }
 
+.avatar {
+  max-width: 600px;
+  width: 100%;
+}
+.avatar .avatar-content {
+  background-color: #050a0c;
+}
+.avatar .avatar-content button {
+  margin-right: auto;
+  padding: 10px;
+  color: #f8e71c;
+  background-color: transparent;
+}
+.avatar .avatar-content ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.avatar .avatar-content ul li {
+  width: 50%;
+}
+.avatar .avatar-content ul li img {
+  width: 100%;
+}
+
 footer {
   background-color: #2c2c2c;
   text-align: center;

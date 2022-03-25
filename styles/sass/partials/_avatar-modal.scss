@@ -1,0 +1,28 @@
+.avatar {
+  max-width: 600px;
+  width: 100%;
+
+  .avatar-content {
+    background-color: $navbar-bg;
+
+    button {
+      margin-right: auto;
+      padding: 10px;
+      color: $primary-accent;
+      background-color: transparent;
+    }
+
+    ul {
+      list-style-type: none;
+      display: flex;
+
+      li {
+        width: 50%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
