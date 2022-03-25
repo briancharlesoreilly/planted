@@ -387,9 +387,41 @@ ul {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+.hamburger-menu-slide .burger-slide-out.active {
+  left: -500px;
+}
+.hamburger-menu-slide .burger-slide-out {
+  position: fixed;
+  top: 0;
+  left: -500px;
+  z-index: 20;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.hamburger-menu-slide .burger-slide-out .close-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.hamburger-menu-slide .burger-slide-out button {
+  color: #f8e71c;
+  background-color: transparent;
+  font-size: 4rem;
+  font-family: "Josefin Sans";
+  padding: 10px;
+  border: 2px solid transparent;
+}
+.hamburger-menu-slide .burger-slide-out button:active .hamburger-menu-slide .burger-slide-out {
+  left: -500px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 
 .burger-slide-out {
-  border: 2px solid pink;
+  background-color: #050a0c;
   width: 320px;
 }
 
@@ -1263,9 +1295,9 @@ footer p {
     height: 800px;
   }
   .home-header .header-text {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .home-header .header-text h1 {
     font-size: 13rem;
