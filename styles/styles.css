@@ -1050,29 +1050,75 @@ button {
 }
 
 .avatar {
+  display: none;
   max-width: 600px;
   width: 100%;
+  padding: 20px;
 }
 .avatar .avatar-content {
-  background-color: #050a0c;
+  background-color: transparent;
 }
 .avatar .avatar-content button {
   margin-right: auto;
   padding: 10px;
-  color: #f8e71c;
+  margin: 10px;
+  color: #2c2c2c;
   background-color: transparent;
+  font-size: 3rem;
+  border: none;
+}
+.avatar .avatar-content button:hover, .avatar .avatar-content button:focus {
+  outline: 2px solid #2c2c2c;
+}
+.avatar .avatar-content button:active {
+  -webkit-box-shadow: 2px 2px #2c2c2c;
+          box-shadow: 2px 2px #2c2c2c;
 }
 .avatar .avatar-content ul {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .avatar .avatar-content ul li {
   width: 50%;
+  position: relative;
+}
+.avatar .avatar-content ul li:hover .choice {
+  z-index: 10;
 }
 .avatar .avatar-content ul li img {
   width: 100%;
+}
+.avatar .avatar-content .choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: #f8e71c;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: -10;
+  outline: 5px solid #f8e71c;
+}
+.avatar .avatar-content .choice p {
+  font-family: "Josefin Sans";
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 footer {
