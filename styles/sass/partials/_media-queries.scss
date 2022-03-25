@@ -260,22 +260,16 @@
 // ********************
 @media (max-width: 768px) {
 
+// Hamburger Menu for mobile and small screens
+// hiding hamburger menu until media query needs it
+  .hamburger-menu-slide {
+    display: block;
+    padding: 20px 0 0 20px;
+  }
+
 // nav bar stylings
-  .flex-nav-container {
-    flex-direction: column;
-    align-items: center;
-
-    li {
-      padding: 20px 20px;
-
-      a {
-        font-size: 4rem;
-      }
-    }
-
-    .logo-li {
-      display: none;
-    }
+  .flex-nav-container.full {
+    display: none;
   }
 
 // button styling
