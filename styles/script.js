@@ -23,14 +23,17 @@ function menuSlide() {
 const commentForm = document.querySelector("form");
 console.log(commentForm);
 
-// store button element
+// store button elements
 const button = commentForm.querySelector("button");
 
 // store avatar div
 const avatarModal = document.querySelector(".avatar");
 console.log(avatarModal);
 
-// listen for when button is clicked
+// store instructions in variable
+const instructions = document.getElementById("instructions");
+
+// listen for when "post comment button is clicked
 button.addEventListener("click", postComment);
 
 // run this when clicked
@@ -42,14 +45,25 @@ function postComment(click){
 // store comment input
 const userComment = document.getElementById("message").value;
 // prevent button click default action
-  click.preventDefault()
+  click.preventDefault();
 
   if (userEmail && userComment && userName) {
     console.log(userName);
     console.log(userEmail);
     console.log(userComment);
-// popup modal to choose avatar
+    // popup modal to choose avatar
     avatarModal.style.display = "flex";
+
+    // store avatar instructions "okay-button" as a variable
+    const avatarsOkay = document.getElementById("okay-button");
+    // listen for when "okay" from avatars instructions is clicked
+    avatarsOkay.addEventListener("click", closeInstructions);
+    function closeInstructions(click) {
+      console.log(instructions);
+      click.preventDefault();
+      instructions.style.display = "none";
+
+    }
 
 
 

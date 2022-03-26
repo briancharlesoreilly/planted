@@ -1066,8 +1066,19 @@ button {
   padding: 15px 10px 10px 10px;
   margin: 20px;
 }
+.avatar .okay button {
+  background-color: transparent;
+  font-family: "Josefin Sans";
+  color: #f8e71c;
+  border: none;
+  font-weight: 700;
+}
 .avatar .okay:hover, .avatar .okay:focus {
   border: 2px solid #f8e71c;
+  cursor: pointer;
+}
+.avatar .okay:active {
+  background-color: #050a0c;
 }
 .avatar .instructions {
   display: -webkit-box;

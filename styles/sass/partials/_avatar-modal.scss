@@ -12,9 +12,22 @@
     padding: 15px 10px 10px 10px;
     margin: 20px;
 
+    button {
+      background-color: transparent;
+      font-family: $heading-font;
+      color: $primary-accent;
+      border: none;
+      font-weight: 700;
+    }
+
     &:hover,
     &:focus {
       border: 2px solid $primary-accent;
+      cursor: pointer;
+    }
+
+    &:active {
+      background-color: $navbar-bg;
     }
   }
   
