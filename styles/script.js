@@ -32,19 +32,37 @@ console.log(avatarModal);
 
 // store instructions in variable
 const instructions = document.getElementById("instructions");
+// store avatar choices (li) as variables
+const pokemon1 = document.getElementById("pokemon1"); 
+const pokemon2 = document.getElementById("pokemon2");
+const pokemon3 = document.getElementById("pokemon3");
+const pokemon4 = document.getElementById("pokemon4");
+const pokemon5 = document.getElementById("pokemon5");
+const pokemon6 = document.getElementById("pokemon6");
+
+function saveAvatarChoice(pokemon) {
+  avatarModal.style.display = "none";
+  const avatarPic = pokemon.target.parentElement.childNodes.outerHtml;
+  console.log(avatarPic);
+}
+
+// HERE BRIAN HERE IS WHERE YOU STOPPED LOOK ABOVE YOU DUMBASS
+// GET THE VALUE OF THE <IMG> HTML FROM THE AVATAR PIC AND SAVE IT SO YOU CAN APPEND THE HTML OF THE PAGE WITH THE CHOSEN AVATAR
+// ************************************************************
+// ************************************************************
+
 
 // listen for when "post comment button is clicked
 button.addEventListener("click", postComment);
-
 // run this when clicked
 function postComment(click){
-// store name input
+  // store name input
   const userName = document.getElementById("name").value;
-// store email input
+  // store email input
   const userEmail = document.getElementById("email").value;
-// store comment input
-const userComment = document.getElementById("message").value;
-// prevent button click default action
+  // store comment input
+  const userComment = document.getElementById("message").value;
+  // prevent button click default action
   click.preventDefault();
 
   if (userEmail && userComment && userName) {
@@ -61,8 +79,13 @@ const userComment = document.getElementById("message").value;
     function closeInstructions(click) {
       console.log(instructions);
       click.preventDefault();
-      instructions.style.display = "none";
-
+      instructions.style.display = "none"; // hiding instructions
+      pokemon1.addEventListener("click", saveAvatarChoice);
+      pokemon2.addEventListener("click", saveAvatarChoice);
+      pokemon3.addEventListener("click", saveAvatarChoice);
+      pokemon4.addEventListener("click", saveAvatarChoice);
+      pokemon5.addEventListener("click", saveAvatarChoice);
+      pokemon6.addEventListener("click", saveAvatarChoice);
     }
 
 
