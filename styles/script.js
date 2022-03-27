@@ -43,30 +43,6 @@ const pokemon5 = document.getElementById("pokemon5");
 const pokemon6 = document.getElementById("pokemon6");
 
 
-
-function saveAvatarChoice(pokemon) {
-  avatarModal.style.display = "none";
-  const avatarPic = pokemon.target.parentElement.firstElementChild.outerHTML;
-
-  console.log(avatarPic);
-
-  // create new comment function
-  function addComment () {
-  // insert HTML into comment section with all user generated info
-    commentSection.innerHTML += `
-    <div class="comment-box">
-      <div class="comment-img">
-        ${avatarPic}
-      </div>
-      <div class="comment-content">
-        <h6 class="blog-post-date">placeholder date by ${userNameGlobal}</h6>
-        <p>USER COMMENT GOES HERE</p>
-      </div>
-    </div>`;
-  };
-  addComment();
-}
-
 // listen for when "post comment button is clicked
 button.addEventListener("click", postComment);
 // run this when clicked
@@ -80,8 +56,6 @@ function postComment(click){
   // prevent button click default action
   click.preventDefault();
 
-  // 8888888888888888888888888888888
-  // delete this if no worky
   function saveAvatarChoice(pokemon) {
     avatarModal.style.display = "none";
     const avatarPic = pokemon.target.parentElement.firstElementChild.outerHTML;
@@ -104,10 +78,6 @@ function postComment(click){
     };
     addComment();
   }
-  
-
-  // delete this if no worky
-  // 8888888888888888888888888888888
 
   // run program so long as the user inputs values for email, name, AND a comment (all three required), otherwise alert them to do so.
   if (userEmail && userComment && userName) {
@@ -133,9 +103,20 @@ function postComment(click){
     }
 
 
+    // BELOW IS WHAT YOUR WORKING ON LAST AND IT DOESNT WORK. IT DOESNT CLEAR ANYTHING BRIAN
+
+    // clear input fields to empty strings when submitted
+    userName.value = "";
+    userEmail.value = "";
+    userComment.value = "";
+
+    // UP IS WHAT YOUR WORKING ON LAST AND IT DOESNT WORK. IT DOESNT CLEAR ANYTHING BRIAN
+
+
   } else {
     alert(`Please fill in all fields (name, email and comment) to post a comment! Thank you :)`);
   }
+  
 };
 
 
