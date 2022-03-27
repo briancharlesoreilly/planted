@@ -21,18 +21,20 @@ function menuSlide() {
 
 // store form element 
 const commentForm = document.querySelector("form");
-console.log(commentForm);
 
 // store button elements
 const button = commentForm.querySelector("button");
 
 // store avatar div
 const avatarModal = document.querySelector(".avatar");
-console.log(avatarModal);
 
-// store instructions in variable
+// store #comment-section-flex as an element
+const commentSection = document.getElementById("comment-section-flex");
+
+
+// store instructions class in a variable
 const instructions = document.getElementById("instructions");
-// store avatar choices (li) as variables
+// store avatar choices as variables
 const pokemon1 = document.getElementById("pokemon1"); 
 const pokemon2 = document.getElementById("pokemon2");
 const pokemon3 = document.getElementById("pokemon3");
@@ -40,10 +42,31 @@ const pokemon4 = document.getElementById("pokemon4");
 const pokemon5 = document.getElementById("pokemon5");
 const pokemon6 = document.getElementById("pokemon6");
 
+
+
 function saveAvatarChoice(pokemon) {
   avatarModal.style.display = "none";
-  const avatarPic = pokemon.target.parentElement.childNodes.outerHtml;
+  const avatarPic = pokemon.target.parentElement.firstElementChild.outerHTML;
+
   console.log(avatarPic);
+
+  // create new div function
+  function addComment () {
+  // insert HTML into comment section with all user generated info
+    commentSection.innerHTML += `
+    <div class="comment-box">
+      <div class="comment-img">
+        ${avatarPic}
+      </div>
+      <div class="comment-content">
+        <h6 class="blog-post-date">placeholder date by commenter name</h6>
+        <p>placeholder comment content</p>
+      </div>
+    </div>`;
+};
+
+  addComment();
+
 }
 
 // HERE BRIAN HERE IS WHERE YOU STOPPED LOOK ABOVE YOU DUMBASS
@@ -65,6 +88,7 @@ function postComment(click){
   // prevent button click default action
   click.preventDefault();
 
+  // run program so long as the user inputs values for email, name, AND a comment (all three required), otherwise alert them to do so.
   if (userEmail && userComment && userName) {
     console.log(userName);
     console.log(userEmail);
@@ -77,7 +101,6 @@ function postComment(click){
     // listen for when "okay" from avatars instructions is clicked
     avatarsOkay.addEventListener("click", closeInstructions);
     function closeInstructions(click) {
-      console.log(instructions);
       click.preventDefault();
       instructions.style.display = "none"; // hiding instructions
       pokemon1.addEventListener("click", saveAvatarChoice);
@@ -89,15 +112,9 @@ function postComment(click){
     }
 
 
-
-
   } else {
     alert(`Please fill in all fields (name, email and comment) to post a comment! Thank you :)`);
   }
-
-
-
-
 };
 
 

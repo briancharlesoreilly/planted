@@ -111,6 +111,7 @@
   
     .choice {
       display: flex;
+      margin: 0;
       justify-content: center;
       align-items: center;
       text-align: center;
@@ -123,11 +124,10 @@
       background-color: rgba(255, 255, 255, 0.7);
       z-index: -10;
       outline: 5px solid $primary-accent;
-      p {
-        font-family: $heading-font;
-        font-size: 3rem;
-        font-weight: 700;
-      }
+      font-family: $heading-font;
+      font-size: 3rem;
+      font-weight: 700;
+      color: $primary-text;
     }
   }
 }

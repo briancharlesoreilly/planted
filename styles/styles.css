@@ -1157,6 +1157,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1173,11 +1174,10 @@ button {
   background-color: rgba(255, 255, 255, 0.7);
   z-index: -10;
   outline: 5px solid #f8e71c;
-}
-.avatar .avatar-content .choice p {
   font-family: "Josefin Sans";
   font-size: 3rem;
   font-weight: 700;
+  color: #2c2c2c;
 }
 
 footer {
