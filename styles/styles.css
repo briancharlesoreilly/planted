@@ -862,6 +862,9 @@ ul {
   padding-top: 8px;
   width: 17%;
 }
+.blog-main-flex .comment-box .comment-img img {
+  max-width: 92px;
+}
 .blog-main-flex .comment-box .comment-content {
   width: 82%;
   margin-bottom: 60px;

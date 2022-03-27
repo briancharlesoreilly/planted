@@ -303,6 +303,10 @@
     .comment-img {
       padding-top: 8px;
       width: 17%;
+
+      img {
+        max-width: 92px;
+      }
     }
 
     .comment-content {
