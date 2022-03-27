@@ -50,7 +50,7 @@ function saveAvatarChoice(pokemon) {
 
   console.log(avatarPic);
 
-  // create new div function
+  // create new comment function
   function addComment () {
   // insert HTML into comment section with all user generated info
     commentSection.innerHTML += `
@@ -59,21 +59,13 @@ function saveAvatarChoice(pokemon) {
         ${avatarPic}
       </div>
       <div class="comment-content">
-        <h6 class="blog-post-date">placeholder date by commenter name</h6>
-        <p>placeholder comment content</p>
+        <h6 class="blog-post-date">placeholder date by ${userNameGlobal}</h6>
+        <p>USER COMMENT GOES HERE</p>
       </div>
     </div>`;
-};
-
+  };
   addComment();
-
 }
-
-// HERE BRIAN HERE IS WHERE YOU STOPPED LOOK ABOVE YOU DUMBASS
-// GET THE VALUE OF THE <IMG> HTML FROM THE AVATAR PIC AND SAVE IT SO YOU CAN APPEND THE HTML OF THE PAGE WITH THE CHOSEN AVATAR
-// ************************************************************
-// ************************************************************
-
 
 // listen for when "post comment button is clicked
 button.addEventListener("click", postComment);
@@ -87,6 +79,35 @@ function postComment(click){
   const userComment = document.getElementById("message").value;
   // prevent button click default action
   click.preventDefault();
+
+  // 8888888888888888888888888888888
+  // delete this if no worky
+  function saveAvatarChoice(pokemon) {
+    avatarModal.style.display = "none";
+    const avatarPic = pokemon.target.parentElement.firstElementChild.outerHTML;
+  
+    console.log(avatarPic);
+  
+    // create new comment function
+    function addComment () {
+    // insert HTML into comment section with all user generated info
+      commentSection.innerHTML += `
+      <div class="comment-box">
+        <div class="comment-img">
+          ${avatarPic}
+        </div>
+        <div class="comment-content">
+          <h6 class="blog-post-date">placeholder date by ${userName}</h6>
+          <p>${userComment}</p>
+        </div>
+      </div>`;
+    };
+    addComment();
+  }
+  
+
+  // delete this if no worky
+  // 8888888888888888888888888888888
 
   // run program so long as the user inputs values for email, name, AND a comment (all three required), otherwise alert them to do so.
   if (userEmail && userComment && userName) {
