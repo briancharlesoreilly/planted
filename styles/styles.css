@@ -1065,7 +1065,6 @@ button {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .avatar .okay {
-  visibility: hidden;
   padding: 15px 10px 10px 10px;
   margin: 20px;
 }
@@ -1105,9 +1104,6 @@ button {
 }
 .avatar .instructions:hover, .avatar .instructions:focus {
   border: 3px solid #f8e71c;
-}
-.avatar .instructions:hover .okay, .avatar .instructions:focus .okay {
-  visibility: visible;
 }
 .avatar .instructions h2 {
   text-align: center;
